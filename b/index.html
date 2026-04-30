@@ -7,7 +7,7 @@
     <title>MLP</title>
 
     <style>
-       .hero__box, .hero__container { margin: 0 auto; position: relative } .hero__lessons-title, .hero__title { text-transform: uppercase; color: #fff; font-weight: 400 } .hero__info, .hero__list-item { background-color: #fff; display: flex } .hero__box, .hero__button { background-repeat: no-repeat } * { margin: 0; padding: 0; box-sizing: border-box } body, html { overflow-x: hidden } body { background-color: #ae1414 } .hero { padding-bottom: 32px } .hero__container { max-width: 400px } .hero__box { max-width: 350px; padding-left: 10px; padding-right: 10px; background-image: url(./images/bg.avif); background-size: cover; background-position: top } .hero__info { align-items: center; justify-content: space-between; margin-bottom: 16px; padding: 8px 20px; border-radius: 0 0 8px 8px } .hero__info-item { display: flex; align-items: center; gap: 4px; color: #fff } .hero__info-item p { font-family: Inter, sans-serif; font-weight: 400; font-size: 16px; line-height: 100%; text-align: center; color: #000 } .hero__title { font-family: Karantina, sans-serif; font-size: clamp(30px, 13.8vw, 45px); line-height: 100%; margin-bottom: 4px; max-width: 350px; margin-left: auto; margin-right: auto } .hero__title span { background: linear-gradient(229.81deg, #ffdf70 .91%, #ffe9a6 47.68%, rgba(255, 223, 112, .83) 94.44%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent } .hero__description { font-family: Inter, sans-serif; font-weight: 400; font-size: clamp(13px, 4.5px, 14px); line-height: 130%; text-align: center; color: #fff } .hero__content { margin-bottom: 30px; padding-top: 20px } .hero__lessons { position: relative; z-index: 2 } .hero__lessons-title { font-family: Karantina, sans-serif; font-size: 28px; line-height: 100%; letter-spacing: 2%; margin-bottom: 8px } .hero__list { display: flex; flex-direction: column; gap: 8px } .hero__list-item { gap: 7px; align-items: center; border-radius: 15px; color: #000; padding: 5px 17px 5px 23px; max-width: 201px; width: 100% } .hero__list-icon { margin-left: -32px } .hero__list-text { font-family: Inter, sans-serif; font-weight: 400; font-size: 14px; line-height: 125% } .hero__button, .hero__timer-time { font-family: Herokid, sans-serif; font-weight: 600; text-transform: uppercase } .hero__image { position: absolute; top: 225px; right: -30px } .hero__button, .hero__image img, .hero__timer, .hero__timer-time { position: relative } .hero__image img { z-index: 1; top: -30px; right: -30px } .hero__image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(174, 20, 20, 0) 0, #ae1414 56.18%); pointer-events: none; z-index: 2; height: 150px; top: 250px; right: -30px } .hero__button { background-image: url(./images/btn.avif); background-size: contain; background-position: center; max-width: 350px; width: 100%; padding: 40px 0; font-size: 28px; line-height: 100%; letter-spacing: 5%; text-align: center; color: #492f0a; background-color: transparent; border: none; cursor: pointer; margin-left: auto; margin-right: auto; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; z-index: 3 } .hero__timer-text, .hero__timer-time { line-height: 100%; color: #fff; text-align: center } .hero__timer-time { font-size: 42px; margin-bottom: 8px; z-index: 20 } .hero__timer-text { font-family: Inter, sans-serif; font-weight: 400; font-size: 16px } .hero__timer-arrow { position: absolute; right: 40px; z-index: 4; top: -10px } @media (max-width:400px) { .hero__image { right: -50px } } @media (max-width:360px) { .hero__list { transform: scale(.9); margin-left: -20px } .hero__timer-arrow { right: 18px; } } .gift, .gift_image { margin-left: auto; margin-right: auto; position: relative } .gift { background-color: #fff; border-radius: 40px; padding: 9px 22px 22px; max-width: 298px; overflow: hidden; margin-bottom: 16px } .gift__list { padding-left: 20px } .gift__list__item { font-family: Inter, sans-serif; font-weight: 400; font-style: Bold; font-size: 16px; line-height: 130% } .gift_image { display: flex; margin-bottom: 35px; z-index: 20 } .gift__round { background-color: #ffeddf; border-radius: 50%; width: 138px; height: 138px; position: absolute; top: -65px; left: 50%; transform: translateX(-50%) }
+        .hero__box, .hero__container { margin: 0 auto; position: relative } .hero__lessons-title, .hero__title { text-transform: uppercase; color: #fff; font-weight: 400 } .hero__info, .hero__list-item { background-color: #fff; display: flex } .hero__box, .hero__button { background-repeat: no-repeat } * { margin: 0; padding: 0; box-sizing: border-box } body, html { overflow-x: hidden } body { background-color: #ae1414 } .hero { padding-bottom: 32px } .hero__container { max-width: 400px } .hero__box { max-width: 350px; padding-left: 10px; padding-right: 10px; background-image: url(./images/bg.avif); background-size: cover; background-position: top } .hero__info { align-items: center; justify-content: space-between; margin-bottom: 16px; padding: 8px 20px; border-radius: 0 0 8px 8px } .hero__info-item { display: flex; align-items: center; gap: 4px; color: #fff } .hero__info-item p { font-family: Inter, sans-serif; font-weight: 400; font-size: 16px; line-height: 100%; text-align: center; color: #000 } .hero__title { font-family: Karantina, sans-serif; font-size: clamp(30px, 13.8vw, 45px); line-height: 100%; letter-spacing: 2%; margin-bottom: 4px; max-width: 350px; margin-left: auto; margin-right: auto } .hero__title span { background: linear-gradient(229.81deg, #ffdf70 .91%, #ffe9a6 47.68%, rgba(255, 223, 112, .83) 94.44%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent } .hero__description { font-family: Inter, sans-serif; font-weight: 400; font-size: clamp(13px, 4.5px, 14px); line-height: 130%; text-align: center; color: #fff } .hero__content { margin-bottom: 30px; padding-top: 20px } .hero__lessons { position: relative; z-index: 2 } .hero__lessons-title { font-family: Karantina, sans-serif; font-size: 28px; line-height: 100%; letter-spacing: 2%; margin-bottom: 8px } .hero__list { display: flex; flex-direction: column; gap: 8px } .hero__list-item { gap: 7px; align-items: center; border-radius: 15px; color: #000; padding: 5px 17px 5px 23px; max-width: 201px; width: 100% } .hero__list-icon { margin-left: -32px } .hero__list-text { font-family: Inter, sans-serif; font-weight: 400; font-size: 14px; line-height: 125% } .hero__button, .hero__timer-time { font-family: "Bebas Neue", sans-serif; font-weight: 600; text-transform: uppercase } .hero__image { position: absolute; top: 225px; right: -30px } .hero__button, .hero__image img, .hero__timer, .hero__timer-time { position: relative } .hero__image img { z-index: 1; top: -30px; right: -30px } .hero__image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(174, 20, 20, 0) 0, #ae1414 56.18%); pointer-events: none; z-index: 2; height: 150px; top: 250px; right: -30px } .hero__button { background-image: url(./images/btn.avif); background-size: contain; background-position: center; max-width: 350px; width: 100%; padding: 40px 0; font-size: 28px; line-height: 100%; letter-spacing: 5%; text-align: center; color: #492f0a; background-color: transparent; border: none; cursor: pointer; margin-left: auto; margin-right: auto; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; z-index: 3 } .hero__timer-text, .hero__timer-time { line-height: 100%; color: #fff; text-align: center } .hero__timer-time { font-size: 42px; margin-bottom: 8px; z-index: 20 } .hero__timer-text { font-family: Inter, sans-serif; font-weight: 400; font-size: 16px } .hero__timer-arrow { position: absolute; right: 40px; z-index: 4; top: -10px } @media (max-width:400px) { .hero__image { right: -50px } } @media (max-width:360px) { .hero__list { transform: scale(.9); margin-left: -20px } .hero__timer-arrow { right: 18px; } } .gift, .gift_image { margin-left: auto; margin-right: auto; position: relative } .gift { background-color: #fff; border-radius: 40px; padding: 9px 22px 22px; max-width: 298px; overflow: hidden; margin-bottom: 16px } .gift__list { display: flex; flex-direction: column; gap: 8px; padding-left: 20px } .gift__list__item { font-family: Inter, sans-serif; font-weight: 400; font-style: Bold; font-size: 16px; line-height: 130% } .gift_image { display: flex; margin-bottom: 35px; z-index: 20 } .gift__round { background-color: #ffeddf; border-radius: 50%; width: 138px; height: 138px; position: absolute; top: -65px; left: 50%; transform: translateX(-50%) }
     </style>
     <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
     <noscript>
@@ -17,142 +17,143 @@
 
 <body>
     <main>
-    <section class="hero">
-        <div class="hero__container">
-            <div class="hero__info">
-                <div class="hero__info-item">
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0.600098 7.10001C0.600098 5.37608 1.28492 3.72279 2.5039 2.50383C3.72289 1.2848 5.37619 0.600006 7.1001 0.600006C8.82402 0.600006 10.4773 1.2848 11.6963 2.50383C12.9153 3.72279 13.6001 5.37608 13.6001 7.10001C13.6001 8.82391 12.9153 10.4772 11.6963 11.6962C10.4773 12.9152 8.82402 13.6 7.1001 13.6C5.37619 13.6 3.72289 12.9152 2.5039 11.6962C1.28492 10.4772 0.600098 8.82391 0.600098 7.10001Z"
-                            stroke="#FC223C" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M7.1001 7.10002V9.42145" stroke="#FC223C" stroke-width="1.2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M7.1001 7.10001L10.0016 4.19791" stroke="#FC223C" stroke-width="1.2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <p class="hero__info-text">Soat 20:00</p>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__info">
+                    <div class="hero__info-item">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.600098 7.10001C0.600098 5.37608 1.28492 3.72279 2.5039 2.50383C3.72289 1.2848 5.37619 0.600006 7.1001 0.600006C8.82402 0.600006 10.4773 1.2848 11.6963 2.50383C12.9153 3.72279 13.6001 5.37608 13.6001 7.10001C13.6001 8.82391 12.9153 10.4772 11.6963 11.6962C10.4773 12.9152 8.82402 13.6 7.1001 13.6C5.37619 13.6 3.72289 12.9152 2.5039 11.6962C1.28492 10.4772 0.600098 8.82391 0.600098 7.10001Z"
+                                stroke="#FC223C" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.1001 7.10002V9.42145" stroke="#FC223C" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M7.1001 7.10001L10.0016 4.19791" stroke="#FC223C" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p class="hero__info-text">Soat 20:00</p>
+                    </div>
+                    <div class="hero__info-item">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.25 0.5V3H11.75V0.5H12V3H14.375C14.444 3 14.5 3.05596 14.5 3.125V14.375C14.5 14.444 14.444 14.5 14.375 14.5H0.625C0.55596 14.5 0.5 14.444 0.5 14.375V3.125C0.5 3.05597 0.555966 3 0.625 3H3V0.5H3.25ZM0.75 14.25H14.25V5.75H0.75V14.25Z"
+                                fill="#FC223C" stroke="#FC223C" />
+                        </svg>
+
+                        <p class="hero__info-text">12-13-May</p>
+                    </div>
                 </div>
-                <div class="hero__info-item">
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M3.25 0.5V3H11.75V0.5H12V3H14.375C14.444 3 14.5 3.05596 14.5 3.125V14.375C14.5 14.444 14.444 14.5 14.375 14.5H0.625C0.55596 14.5 0.5 14.444 0.5 14.375V3.125C0.5 3.05597 0.555966 3 0.625 3H3V0.5H3.25ZM0.75 14.25H14.25V5.75H0.75V14.25Z"
-                            fill="#FC223C" stroke="#FC223C" />
-                    </svg>
+                <div class="hero__box">
 
-                    <p class="hero__info-text">12-13-May</p>
-                </div>
-            </div>
-            <div class="hero__box">
+                    <h1 class="hero__title" style="margin-bottom: 0;">
+                        dangasalikni to’xtatib
+                    </h1>
+                    <h1 class="hero__title" style="margin-bottom: 0;">
+                        <span>maqsadli hayot </span> <img src="./images/title.avif" loading="lazy" decoding="async"
+                            alt="target" width="113" height="42">
+                    </h1>
+                    <h1 class="hero__title">
+                        kechirishni o’rganing!
+                    </h1>
 
-                <h1 class="hero__title" style="margin-bottom: 0;">
-                    dangasalikni to’xtatib
-                </h1>
-                <h1 class="hero__title" style="margin-bottom: 0;">
-                    <span>maqsadli hayot </span> <img src="./images/title.avif" loading="lazy" decoding="async"
-                        alt="target" width="113" height="42">
-                </h1>
-                <h1 class="hero__title">
-                    kechirishni o’rganing!
-                </h1>
+                    <p class="hero__description">
+                        2 kunlik bepul darsda - <b>vaqt va pulni</b> <br>
+                        boshqarishga oid eng sara bilimlarni o’rgataman
+                    </p>
 
-                <p class="hero__description">
-                    2 kunlik bepul darsda - <b>vaqt va pulni</b> <br>
-                    boshqarishga oid eng sara bilimlarni o’rgataman
-                </p>
+                    <div class="hero__content">
 
-                <div class="hero__content">
+                        <div class="hero__lessons">
+                            <h2 class="hero__lessons-title">bepul darsda o’rganasiz:</h2>
 
-                    <div class="hero__lessons">
-                        <h2 class="hero__lessons-title">bepul darsda o’rganasiz:</h2>
+                            <ul class="hero__list">
+                                <li class="hero__list-item">
+                                    <span class="hero__list-icon">
+                                        <img src="./images/icon.png" loading="lazy" decoding="async" width="24"
+                                            height="11" alt="icon">
+                                    </span>
+                                    <p class="hero__list-text">
+                                        Vaqt va <b>prioritetlarni</b> <br>
+                                        boshqarib, aniq natijaga <br> erishishni
+                                    </p>
+                                </li>
 
-                        <ul class="hero__list">
-                            <li class="hero__list-item">
-                                <span class="hero__list-icon">
-                                    <img src="./images/icon.png" loading="lazy" decoding="async" width="24" height="11"
-                                        alt="icon">
-                                </span>
-                                <p class="hero__list-text">
-                                    Vaqt va <b>prioritetlarni</b> <br>
-                                    boshqarib, aniq natijaga <br> erishishni
-                                </p>
-                            </li>
+                                <li class="hero__list-item">
+                                    <span class="hero__list-icon">
+                                        <img src="./images/icon.png" loading="lazy" decoding="async" width="24"
+                                            height="11" alt="icon">
+                                    </span>
+                                    <p class="hero__list-text">
+                                        Pulni to‘g‘ri yo‘lga qo‘yib, <br>
+                                        <b>daromadni o‘stirishni</b>
+                                    </p>
+                                </li>
 
-                            <li class="hero__list-item">
-                                <span class="hero__list-icon">
-                                    <img src="./images/icon.png" loading="lazy" decoding="async" width="24" height="11"
-                                        alt="icon">
-                                </span>
-                                <p class="hero__list-text">
-                                    Pulni to‘g‘ri yo‘lga qo‘yib, <br>
-                                    <b>daromadni o‘stirishni</b>
-                                </p>
-                            </li>
+                                <li class="hero__list-item">
+                                    <span class="hero__list-icon">
+                                        <img src="./images/icon.png" loading="lazy" decoding="async" width="24"
+                                            height="11" alt="icon">
+                                    </span>
+                                    <p class="hero__list-text">
+                                        Hayotni balansga solib, <br>
+                                        <b>uzoq muddatli energiya</b> <br> va reja bilan yashash
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
 
-                            <li class="hero__list-item">
-                                <span class="hero__list-icon">
-                                    <img src="./images/icon.png" loading="lazy" decoding="async" width="24" height="11"
-                                        alt="icon">
-                                </span>
-                                <p class="hero__list-text">
-                                    Hayotni balansga solib, <br>
-                                    <b>uzoq muddatli energiya</b> <br> va reja bilan yashash
-                                </p>
-                            </li>
-                        </ul>
+                        <div class="hero__image">
+                            <img src="./images/speaker.avif" loading="lazy" decoding="async" width="293" height="360"
+                                alt="speaker">
+                        </div>
+
                     </div>
 
-                    <div class="hero__image">
-                        <img src="./images/speaker.avif" loading="lazy" decoding="async" width="293" height="360"
-                            alt="speaker">
-                    </div>
-
+                    <button class="hero__button webinar-cta">darsda qatnashish</button>
                 </div>
 
-                <button class="hero__button webinar-cta">darsda qatnashish</button>
-            </div>
+                <div class="hero__timer">
+                    <p class="hero__timer-time" id="timer"><span id="timer-min">02</span> <span>:</span> <span
+                            id="timer-sec">00</span>
+                    </p>
+                    <p class="hero__timer-text">Bepul qatnashishga ulguring!</p>
+                    <img class="hero__timer-arrow" src="./images/arrow.avif" loading="lazy" decoding="async" width="36"
+                        height="73" alt="arrow">
+                </div>
 
-            <div class="hero__timer">
-                <p class="hero__timer-time" id="timer"><span id="timer-min">02</span> <span>:</span> <span id="timer-sec">00</span>
-                </p>
-                <p class="hero__timer-text">Bepul qatnashishga ulguring!</p>
-                <img class="hero__timer-arrow" src="./images/arrow.avif" loading="lazy" decoding="async" width="36"
-                    height="73" alt="arrow">
-            </div>
+                <h3 class="hero__title"
+                    style="margin-bottom: 0; text-align: center; margin-top: 32px; margin-bottom: 16px;">
+                    qatnashuvchilarga <br> bonus video-darslar
+                    <svg style="display: flex;margin-left: 50px;" width="140" height="5" viewBox="0 0 140 5" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M139.136 3.44214C138.433 3.34426 137.785 3.30978 137.079 3.27216C136.372 3.23454 135.728 3.13981 135.025 3.04193C133.5 2.83991 132.038 2.58077 130.514 2.37876C127.642 1.98413 124.712 1.58636 121.83 1.3725C119.188 1.11092 116.483 0.906463 113.834 0.765396C113.127 0.727779 112.421 0.690161 111.774 0.655678C109.121 0.574868 106.472 0.433801 103.82 0.352991C97.629 0.204605 91.3792 0.0530836 85.182 0.0252099C79.1024 0.00360581 73.0229 -0.0179982 66.999 0.0237885C64.046 0.047817 61.0341 0.0687104 58.081 0.0927389C54.8272 0.221605 51.5797 0.22996 48.388 0.301705C41.7069 0.489778 35.088 0.620729 28.4069 0.808802C22.6121 0.983641 16.8665 1.34238 11.1114 1.88189C7.4294 2.2901 3.68537 2.75542 0.000210917 3.22389C4.16385 3.74774 8.39599 4.09396 12.6313 4.37992C15.3982 4.52726 18.1682 4.61433 20.8794 4.69828C22.6486 4.73207 24.4211 4.7056 26.2525 4.68227C27.3742 4.68157 28.4403 4.61749 29.5063 4.5534C32.4069 4.40572 35.3632 4.32144 38.2638 4.17376C41.6354 4.05117 44.9513 3.86518 48.3228 3.74258C51.7533 3.62312 55.2426 3.50679 58.673 3.38733C61.747 3.30931 64.8799 3.23443 68.0128 3.15955C71.0279 3.0784 74.0987 3.06065 77.1107 3.03975C80.1815 3.02199 83.1934 3.0011 86.2642 2.98334C89.3939 2.96872 92.4583 3.07147 95.5847 3.1171C101.249 3.17702 106.904 3.41771 112.617 3.66153C115.796 3.83081 118.922 3.87644 122.108 3.92521C125.234 3.97084 128.361 4.01647 131.431 3.99871C132.671 4.00429 133.969 4.013 135.212 3.95831C135.804 3.92941 136.455 3.90363 137.05 3.81447C137.586 3.72217 138.125 3.56961 138.658 3.53757C138.838 3.48672 138.959 3.43273 139.136 3.44214Z"
+                            fill="#FFDBA1" />
+                    </svg>
+                </h3>
+                <div class="gift">
+                    <svg class="gift_image" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.1667 44H5.5C4.48749 44 3.66667 43.1792 3.66667 42.1667V29.3333H20.1667V44ZM40.3333 42.1667C40.3333 43.1792 39.5126 44 38.5 44H23.8333V29.3333H40.3333V42.1667ZM31.7163 0C35.3379 0 38.5 2.70211 38.5 6.41667C38.5 10.1312 35.3379 12.8333 31.7163 12.8333H40.3333C41.2999 12.8333 42.2472 13.1644 42.9579 13.8753C43.6689 14.5863 44 15.5334 44 16.5V23.8333C44 24.8459 43.1792 25.6667 42.1667 25.6667H23.8333V14.6667H20.1667V25.6667H1.83333C0.820811 25.6667 0 24.8459 0 23.8333V16.5C0 15.5334 0.331063 14.5863 1.04199 13.8753C1.75292 13.1644 2.70004 12.8333 3.66667 12.8333H12.2837C8.66212 12.8333 5.5 10.1313 5.5 6.41667C5.5 2.70206 8.66212 0 12.2837 0C14.0497 0.000105956 15.6414 0.836884 16.919 1.80469C18.2207 2.79088 19.3943 4.06375 20.3601 5.27083C20.9816 6.04778 21.5338 6.82275 22 7.51415C22.4662 6.82275 23.0184 6.04778 23.6399 5.27083C24.6057 4.06373 25.7792 2.79088 27.0811 1.80469C28.3585 0.836886 29.9503 0.000141273 31.7163 0ZM12.2837 3.66667C10.4053 3.66667 9.16667 4.99794 9.16667 6.41667C9.16667 7.83539 10.4053 9.16667 12.2837 9.16667H18.6896C18.3328 8.6533 17.9324 8.10649 17.4972 7.5625C16.6298 6.47821 15.6727 5.45892 14.706 4.72655C13.7152 3.97588 12.9007 3.66678 12.2837 3.66667ZM31.7163 3.66667C31.0994 3.66681 30.2848 3.97593 29.2939 4.72655C28.3274 5.45892 27.3702 6.47823 26.5029 7.5625C26.0676 8.10649 25.6672 8.6533 25.3105 9.16667H31.7163C33.5947 9.16667 34.8333 7.83545 34.8333 6.41667C34.8333 4.99789 33.5947 3.66667 31.7163 3.66667Z"
+                            fill="#AE1414" />
+                    </svg>
 
-            <h3 class="hero__title"
-                style="margin-bottom: 0; text-align: center; margin-top: 32px; margin-bottom: 16px;">
-                qatnashuvchilarga <br> bonus video-darslar
-                <svg style="display: flex;margin-left: 50px;" width="140" height="5" viewBox="0 0 140 5" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M139.136 3.44214C138.433 3.34426 137.785 3.30978 137.079 3.27216C136.372 3.23454 135.728 3.13981 135.025 3.04193C133.5 2.83991 132.038 2.58077 130.514 2.37876C127.642 1.98413 124.712 1.58636 121.83 1.3725C119.188 1.11092 116.483 0.906463 113.834 0.765396C113.127 0.727779 112.421 0.690161 111.774 0.655678C109.121 0.574868 106.472 0.433801 103.82 0.352991C97.629 0.204605 91.3792 0.0530836 85.182 0.0252099C79.1024 0.00360581 73.0229 -0.0179982 66.999 0.0237885C64.046 0.047817 61.0341 0.0687104 58.081 0.0927389C54.8272 0.221605 51.5797 0.22996 48.388 0.301705C41.7069 0.489778 35.088 0.620729 28.4069 0.808802C22.6121 0.983641 16.8665 1.34238 11.1114 1.88189C7.4294 2.2901 3.68537 2.75542 0.000210917 3.22389C4.16385 3.74774 8.39599 4.09396 12.6313 4.37992C15.3982 4.52726 18.1682 4.61433 20.8794 4.69828C22.6486 4.73207 24.4211 4.7056 26.2525 4.68227C27.3742 4.68157 28.4403 4.61749 29.5063 4.5534C32.4069 4.40572 35.3632 4.32144 38.2638 4.17376C41.6354 4.05117 44.9513 3.86518 48.3228 3.74258C51.7533 3.62312 55.2426 3.50679 58.673 3.38733C61.747 3.30931 64.8799 3.23443 68.0128 3.15955C71.0279 3.0784 74.0987 3.06065 77.1107 3.03975C80.1815 3.02199 83.1934 3.0011 86.2642 2.98334C89.3939 2.96872 92.4583 3.07147 95.5847 3.1171C101.249 3.17702 106.904 3.41771 112.617 3.66153C115.796 3.83081 118.922 3.87644 122.108 3.92521C125.234 3.97084 128.361 4.01647 131.431 3.99871C132.671 4.00429 133.969 4.013 135.212 3.95831C135.804 3.92941 136.455 3.90363 137.05 3.81447C137.586 3.72217 138.125 3.56961 138.658 3.53757C138.838 3.48672 138.959 3.43273 139.136 3.44214Z"
-                        fill="#FFDBA1" />
-                </svg>
-            </h3>
-            <div class="gift">
-                <svg class="gift_image" width="44" height="44" viewBox="0 0 44 44" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M20.1667 44H5.5C4.48749 44 3.66667 43.1792 3.66667 42.1667V29.3333H20.1667V44ZM40.3333 42.1667C40.3333 43.1792 39.5126 44 38.5 44H23.8333V29.3333H40.3333V42.1667ZM31.7163 0C35.3379 0 38.5 2.70211 38.5 6.41667C38.5 10.1312 35.3379 12.8333 31.7163 12.8333H40.3333C41.2999 12.8333 42.2472 13.1644 42.9579 13.8753C43.6689 14.5863 44 15.5334 44 16.5V23.8333C44 24.8459 43.1792 25.6667 42.1667 25.6667H23.8333V14.6667H20.1667V25.6667H1.83333C0.820811 25.6667 0 24.8459 0 23.8333V16.5C0 15.5334 0.331063 14.5863 1.04199 13.8753C1.75292 13.1644 2.70004 12.8333 3.66667 12.8333H12.2837C8.66212 12.8333 5.5 10.1313 5.5 6.41667C5.5 2.70206 8.66212 0 12.2837 0C14.0497 0.000105956 15.6414 0.836884 16.919 1.80469C18.2207 2.79088 19.3943 4.06375 20.3601 5.27083C20.9816 6.04778 21.5338 6.82275 22 7.51415C22.4662 6.82275 23.0184 6.04778 23.6399 5.27083C24.6057 4.06373 25.7792 2.79088 27.0811 1.80469C28.3585 0.836886 29.9503 0.000141273 31.7163 0ZM12.2837 3.66667C10.4053 3.66667 9.16667 4.99794 9.16667 6.41667C9.16667 7.83539 10.4053 9.16667 12.2837 9.16667H18.6896C18.3328 8.6533 17.9324 8.10649 17.4972 7.5625C16.6298 6.47821 15.6727 5.45892 14.706 4.72655C13.7152 3.97588 12.9007 3.66678 12.2837 3.66667ZM31.7163 3.66667C31.0994 3.66681 30.2848 3.97593 29.2939 4.72655C28.3274 5.45892 27.3702 6.47823 26.5029 7.5625C26.0676 8.10649 25.6672 8.6533 25.3105 9.16667H31.7163C33.5947 9.16667 34.8333 7.83545 34.8333 6.41667C34.8333 4.99789 33.5947 3.66667 31.7163 3.66667Z"
-                        fill="#AE1414" />
-                </svg>
-
-                <div class="gift__round"></div>
-                <ul class="gift__list">
-                    <li class="gift__list__item"><b>Kreditlar</b> va ularning to’lovlari</li>
-                    <li class="gift__list__item"><b>Qarz yukini</b> hisoblash</li>
-                    <li class="gift__list__item">Kreditdagi <b>yashirin to'lovlar</b></li>
-                    <li class="gift__list__item">Excel'da <b>kreditlarni hisoblash</b> jadvali (fayli bilan)</li>
-                </ul>
+                    <div class="gift__round"></div>
+                    <ul class="gift__list">
+                        <li class="gift__list__item"><b>Kreditlar</b> va ularning to’lovlari</li>
+                        <li class="gift__list__item"><b>Qarz yukini</b> hisoblash</li>
+                        <li class="gift__list__item">Kreditdagi <b>yashirin to'lovlar</b></li>
+                        <li class="gift__list__item">Excel'da <b>kreditlarni hisoblash</b> jadvali (fayli bilan)</li>
+                    </ul>
+                </div>
+                <div style="padding-left: 10px; padding-right: 10px;">
+                    <button class="hero__button webinar-cta">darsda qatnashish</button>
+                </div>
             </div>
-            <div style="padding-left: 10px; padding-right: 10px;">
-                <button class="hero__button webinar-cta">darsda qatnashish</button>
-            </div>
-        </div>
-    </section>
+        </section>
     </main>
 
-   <!-- Modal -->
+    <!-- Modal -->
     <div id="registrationModal" class="homeModal" style="display: none">
         <div class="homeModalOverlay"></div>
         <div class="homeFormContainer">
@@ -217,8 +218,8 @@
         </div>
     </div>
 
-  <script defer src="../js/phoneFormatter.js"></script>
-  <script defer src="../js/app.js"></script>
+    <script defer src="../js/phoneFormatter.js"></script>
+    <script defer src="../js/app.js"></script>
 </body>
 
 </html>
