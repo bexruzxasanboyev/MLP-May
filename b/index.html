@@ -7,7 +7,330 @@
     <title>MLP</title>
 
     <style>
-        .hero__box, .hero__container { margin: 0 auto; position: relative } .hero__lessons-title, .hero__title { text-transform: uppercase; color: #fff; font-weight: 400 } .hero__info, .hero__list-item { background-color: #fff; display: flex } .hero__box, .hero__button { background-repeat: no-repeat } * { margin: 0; padding: 0; box-sizing: border-box } body, html { overflow-x: hidden } body { background-color: #ae1414 } .hero { padding-bottom: 32px } .hero__container { max-width: 400px } .hero__box { max-width: 350px; padding-left: 10px; padding-right: 10px; background-image: url(./images/bg.avif); background-size: cover; background-position: top } .hero__info { align-items: center; justify-content: space-between; margin-bottom: 16px; padding: 8px 20px; border-radius: 0 0 8px 8px } .hero__info-item { display: flex; align-items: center; gap: 4px; color: #fff } .hero__info-item p { font-family: Inter, sans-serif; font-weight: 400; font-size: 16px; line-height: 100%; text-align: center; color: #000 } .hero__title { font-family: Karantina, sans-serif; font-size: clamp(30px, 13.8vw, 45px); line-height: 100%; letter-spacing: 2%; margin-bottom: 4px; max-width: 350px; margin-left: auto; margin-right: auto } .hero__title span { background: linear-gradient(229.81deg, #ffdf70 .91%, #ffe9a6 47.68%, rgba(255, 223, 112, .83) 94.44%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent } .hero__description { font-family: Inter, sans-serif; font-weight: 400; font-size: clamp(13px, 4.5px, 14px); line-height: 130%; text-align: center; color: #fff } .hero__content { margin-bottom: 30px; padding-top: 20px } .hero__lessons { position: relative; z-index: 2 } .hero__lessons-title { font-family: Karantina, sans-serif; font-size: 28px; line-height: 100%; letter-spacing: 2%; margin-bottom: 8px } .hero__list { display: flex; flex-direction: column; gap: 8px } .hero__list-item { gap: 7px; align-items: center; border-radius: 15px; color: #000; padding: 5px 17px 5px 23px; max-width: 201px; width: 100% } .hero__list-icon { margin-left: -32px } .hero__list-text { font-family: Inter, sans-serif; font-weight: 400; font-size: 14px; line-height: 125% } .hero__button, .hero__timer-time { font-family: "Bebas Neue", sans-serif; font-weight: 600; text-transform: uppercase } .hero__image { position: absolute; top: 225px; right: -30px } .hero__button, .hero__image img, .hero__timer, .hero__timer-time { position: relative } .hero__image img { z-index: 1; top: -30px; right: -30px } .hero__image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(174, 20, 20, 0) 0, #ae1414 56.18%); pointer-events: none; z-index: 2; height: 150px; top: 250px; right: -30px } .hero__button { background-image: url(./images/btn.avif); background-size: contain; background-position: center; max-width: 350px; width: 100%; padding: 40px 0; font-size: 28px; line-height: 100%; letter-spacing: 5%; text-align: center; color: #492f0a; background-color: transparent; border: none; cursor: pointer; margin-left: auto; margin-right: auto; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; z-index: 3 } .hero__timer-text, .hero__timer-time { line-height: 100%; color: #fff; text-align: center } .hero__timer-time { font-size: 42px; margin-bottom: 8px; z-index: 20 } .hero__timer-text { position: relative; z-index: 10; font-family: Inter, sans-serif; font-weight: 400; font-size: 16px } .hero__timer-arrow { position: absolute; right: 40px; z-index: 4; top: -10px } @media (max-width:400px) { .hero__image { right: -50px } } @media (max-width:360px) { .hero__list { transform: scale(.9); margin-left: -20px } .hero__timer-arrow { right: 18px; } } .gift, .gift_image { margin-left: auto; margin-right: auto; position: relative } .gift { background-color: #fff; border-radius: 40px; padding: 9px 22px 22px; max-width: 298px; overflow: hidden; margin-bottom: 16px } .gift__list { display: flex; flex-direction: column; gap: 8px; padding-left: 20px } .gift__list__item { font-family: Inter, sans-serif; font-weight: 400; font-style: Bold; font-size: 16px; line-height: 130% } .gift_image { display: flex; margin-bottom: 35px; z-index: 20 } .gift__round { background-color: #ffeddf; border-radius: 50%; width: 138px; height: 138px; position: absolute; top: -65px; left: 50%; transform: translateX(-50%) }
+        .hero__box,
+        .hero__container {
+            margin: 0 auto;
+            position: relative
+        }
+
+        .hero__lessons-title,
+        .hero__title {
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 400
+        }
+
+        .hero__info,
+        .hero__list-item {
+            background-color: #fff;
+            display: flex
+        }
+
+        .hero__box,
+        .hero__button {
+            background-repeat: no-repeat
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body,
+        html {
+            overflow-x: hidden
+        }
+
+        body {
+            background-color: #ae1414
+        }
+
+        .hero {
+            padding-bottom: 32px
+        }
+
+        .hero__container {
+            max-width: 400px
+        }
+
+        .hero__box {
+            max-width: 350px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .hero__info {
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            padding: 8px 20px;
+            border-radius: 0 0 8px 8px
+        }
+
+        .hero__info-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: #fff
+        }
+
+        .hero__info-item p {
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            text-align: center;
+            color: #000
+        }
+
+        .hero__title {
+            font-family: Karantina, sans-serif;
+            font-size: clamp(46px, 13.9vw, 50px);
+            line-height: 100%;
+            letter-spacing: 2%;
+            margin-bottom: 4px;
+            max-width: 350px;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .hero__titlesub {
+            font-size: clamp(30px, 12.9vw, 45px);
+            font-family: Karantina, sans-serif;
+            line-height: 100%;
+            letter-spacing: 2%;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+            max-width: 350px;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .hero__title span {
+            background: linear-gradient(229.81deg, #ffdf70 .91%, #ffe9a6 47.68%, rgba(255, 223, 112, .83) 94.44%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent
+        }
+
+        .hero__description {
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+            font-size: clamp(13px, 4.5px, 14px);
+            line-height: 130%;
+            text-align: center;
+            color: #fff
+        }
+
+        .hero__content {
+            margin-bottom: 30px;
+            padding-top: 20px
+        }
+
+        .hero__lessons {
+            position: relative;
+            z-index: 2
+        }
+
+        .hero__lessons-title {
+            font-family: Karantina, sans-serif;
+            font-size: 28px;
+            line-height: 100%;
+            letter-spacing: 2%;
+            margin-bottom: 8px
+        }
+
+        .hero__list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px
+        }
+
+        .hero__list-item {
+            gap: 7px;
+            align-items: center;
+            border-radius: 15px;
+            color: #000;
+            padding: 5px 17px 5px 23px;
+            max-width: 201px;
+            width: 100%
+        }
+
+        .hero__list-icon {
+            margin-left: -32px
+        }
+
+        .hero__list-text {
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 125%
+        }
+
+        .hero__button,
+        .hero__timer-time {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 600;
+            text-transform: uppercase
+        }
+
+        .hero__image {
+            position: absolute;
+            top: 225px;
+            right: -30px
+        }
+
+        .hero__button,
+        .hero__image img,
+        .hero__timer,
+        .hero__timer-time {
+            position: relative
+        }
+
+        .hero__image img {
+            z-index: 1;
+            top: -30px;
+            right: -30px
+        }
+
+        .hero__image::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(174, 20, 20, 0) 0, #ae1414 56.18%);
+            pointer-events: none;
+            z-index: 2;
+            height: 150px;
+            top: 250px;
+            right: -30px
+        }
+
+        .hero__bg {
+            position: absolute;
+            top: 200px;
+            right: -220px;
+        }
+
+        .hero__button {
+            background-image: url(./images/btn.avif);
+            background-size: contain;
+            background-position: center;
+            max-width: 350px;
+            width: 100%;
+            padding: 40px 0;
+            font-size: 28px;
+            line-height: 100%;
+            letter-spacing: 5%;
+            text-align: center;
+            color: #492f0a;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3
+        }
+
+        .hero__timer-text,
+        .hero__timer-time {
+            line-height: 100%;
+            color: #fff;
+            text-align: center
+        }
+
+        .hero__timer-time {
+            font-size: 42px;
+            margin-bottom: 8px;
+            z-index: 20
+        }
+
+        .hero__timer-text {
+            position: relative;
+            z-index: 10;
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+            font-size: 16px
+        }
+
+        .hero__timer-arrow {
+            position: absolute;
+            right: 40px;
+            z-index: 4;
+            top: -10px
+        }
+
+        @media (max-width:400px) {
+            .hero__image {
+                right: -50px
+            }
+        }
+
+        @media (max-width:360px) {
+            .hero__list {
+                transform: scale(.9);
+                margin-left: -20px
+            }
+
+            .hero__timer-arrow {
+                right: 18px;
+            }
+        }
+
+        .gift,
+        .gift_image {
+            margin-left: auto;
+            margin-right: auto;
+            position: relative
+        }
+
+        .gift {
+            background-color: #fff;
+            border-radius: 40px;
+            padding: 9px 22px 22px;
+            max-width: 298px;
+            overflow: hidden;
+            margin-bottom: 16px
+        }
+
+        .gift__list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-left: 20px
+        }
+
+        .gift__list__item {
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+            font-style: Bold;
+            font-size: 16px;
+            line-height: 130%
+        }
+
+        .gift_image {
+            display: flex;
+            margin-bottom: 35px;
+            z-index: 20
+        }
+
+        .gift__round {
+            background-color: #ffeddf;
+            border-radius: 50%;
+            width: 138px;
+            height: 138px;
+            position: absolute;
+            top: -65px;
+            left: 50%;
+            transform: translateX(-50%)
+        }
     </style>
     <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
     <noscript>
@@ -47,7 +370,7 @@
                     <h1 class="hero__title" style="margin-bottom: 0;">
                         dangasalikni to’xtatib
                     </h1>
-                    <h1 class="hero__title" style="margin-bottom: 0;">
+                    <h1 class="hero__titlesub" style="margin-bottom: 0;">
                         <span>maqsadli hayot </span> <img src="./images/title.avif" loading="lazy" decoding="async"
                             alt="target" width="113" height="42">
                     </h1>
@@ -104,8 +427,10 @@
                         <div class="hero__image">
                             <img src="./images/speaker.avif" loading="lazy" decoding="async" width="293" height="360"
                                 alt="speaker">
+                          
                         </div>
-
+  <img class="hero__bg" src="./images/bg.avif" loading="lazy" decoding="async" width="396"
+                                height="396" alt="bg">
                     </div>
 
                     <button class="hero__button webinar-cta">darsda qatnashish</button>
